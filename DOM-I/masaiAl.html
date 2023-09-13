@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    button{
+        color:cadetblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Masai School Application</h1>
+  <p>Enter Your name and gender to apply for masai school</p>
+  <h2 id="display">Display entered name and gender here</h2>
+  <hr>
+  <input type="text" id ="name" placeholder="Enter your name">
+  <select id="gender">
+    <option value=""></option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+  <button onclick="apply()">Apply</button>
+</body>
+</html>
+<script>
+ // Design an application such that when user clicks on Apply button, he should take entered values from both input and 
+ // select tags and display it in h2 tag with id "display"Design an application such that when user clicks on Apply button, he should take entered values from both input and select tags and display it in h2 tag with id "display"
+ 
+;
+ function apply(){
+   let H2 = document.getElementById("display");
+   let name = document.getElementById("name").value;
+   let G = document.getElementById("gender").value;
+   H2.innerText= name + " "+ G ;
+  
+ }
+
+</script>
